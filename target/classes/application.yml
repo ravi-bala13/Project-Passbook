@@ -1,0 +1,15 @@
+service:
+  name: passbook
+environment: local
+
+server:
+  port: 8001
+
+mongo-db:
+  name: murugan
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://ravibala-13:bals1999@cluster0.hfo0i.mongodb.net/?retryWrites=true&w=majority
+      database: passbook
