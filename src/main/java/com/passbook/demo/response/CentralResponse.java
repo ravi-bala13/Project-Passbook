@@ -2,6 +2,7 @@ package com.passbook.demo.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.passbook.demo.database.entity.Partner;
 import com.passbook.demo.database.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,4 +19,5 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CentralResponse extends BaseResponse{
     List<User> users;
+    List<Partner> partners;
 }

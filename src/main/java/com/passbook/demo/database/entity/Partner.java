@@ -1,10 +1,7 @@
 package com.passbook.demo.database.entity;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -13,11 +10,8 @@ import java.util.Date;
 
 @Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
-@Document(collection = "user_details")
-@JsonInclude(JsonInclude.Include.NON_NULL)
-public class User {
+@Document(collection = "partner_details")
+public class Partner {
 
     @Id
     private String id;
@@ -27,6 +21,8 @@ public class User {
     private String address;
 
     private String mobile;
+
+    private Integer cashInHand;
 
     @Field("created_at")
     private Date createdAt;

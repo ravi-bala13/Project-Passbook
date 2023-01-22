@@ -45,13 +45,7 @@
 			<version>2.9.2</version>
 		</dependency>
 
-		<!-- ******************** For Request object validation ******************** -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>6.0.13.Final</version>
-		</dependency>
-
+		<!-- ******************** Commons utils ******************** -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-text</artifactId>

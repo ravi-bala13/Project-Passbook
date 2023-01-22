@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotEmpty;
 
 @Data
 @NoArgsConstructor
@@ -15,10 +14,12 @@ import javax.validation.constraints.NotEmpty;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CentralBaseRequest {
 
-    @NotEmpty(message = "Name must not be null")
     private String name;
 
-    @NotEmpty(message = "mobile no must not be null")
     private String mobile;
+
+    private String Address;
+
+    private Integer cash;
 
 }
