@@ -9,12 +9,13 @@ import lombok.extern.log4j.Log4j2;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.List;
 
+@Log4j2
 @RestController
 @RequestMapping("/central")
-@Log4j2
 public class CentralController {
 
     @Autowired
