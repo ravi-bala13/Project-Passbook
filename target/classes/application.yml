@@ -3,10 +3,10 @@ service:
 environment: local
 
 server:
-  port: 8001
+  port: 8080
 
 mongo-db:
-  name: murugan
+  name: passbook
 
 spring:
   data:
